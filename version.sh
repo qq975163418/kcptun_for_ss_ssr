@@ -13,13 +13,13 @@ export SS_LIBEV_LINK="https://github.com/shadowsocks/shadowsocks-libev/releases/
 export SS_LIBEV_YUM_INIT="https://raw.githubusercontent.com/onekeyshell/kcptun_for_ss_ssr/master/ss_libev.init"
 export SS_LIBEV_APT_INIT="https://raw.githubusercontent.com/onekeyshell/kcptun_for_ss_ssr/master/ss_libev_apt.init"
 # SSR
-#export SSR_VER=3.3.2
-export SSR_VER=$(wget --no-check-certificate -qO- https://raw.githubusercontent.com/onekeyshell/shadowsocksr/manyuser/shadowsocks/version.py | grep return | cut -d\' -f2 | awk '{print $1}')
-export SSR_LINK="https://github.com/onekeyshell/shadowsocksr/archive/manyuser.zip"
+#export SSR_VER=3.2.1
+export SSR_VER=$(wget --no-check-certificate -qO- https://github.com/shadowsocksrr/shadowsocksr/blob/akkariiin/master/shadowsocks/version.py | grep return | cut -d\' -f2 | awk '{print $1}')
+export SSR_LINK="https://github.com/shadowsocksrr/shadowsocksr/archive/manyuser.zip"
 export SSR_YUM_INIT="https://raw.githubusercontent.com/onekeyshell/kcptun_for_ss_ssr/master/ssr.init"
 export SSR_APT_INIT="https://raw.githubusercontent.com/onekeyshell/kcptun_for_ss_ssr/master/ssr_apt.init"
 # KCPTUN
-export KCPTUN_VER=20170904
+export KCPTUN_VER=20171021
 export KCPTUN_AMD64_LINK="https://github.com/xtaci/kcptun/releases/download/v${KCPTUN_VER}/kcptun-linux-amd64-${KCPTUN_VER}.tar.gz"
 export KCPTUN_386_LINK="https://github.com/xtaci/kcptun/releases/download/v${KCPTUN_VER}/kcptun-linux-386-${KCPTUN_VER}.tar.gz"
 export KCPTUN_INIT="https://raw.githubusercontent.com/onekeyshell/kcptun_for_ss_ssr/master/kcptun.init"
