@@ -1108,7 +1108,6 @@ pre_install_kcptun_for_ss_ssr(){
         echo "  7: auth_chain_b"
         echo "  8: auth_chain_c"
         echo "  9: auth_chain_d"
-        echo "  10: auth_chain_e"
         read -p "Enter your choice (1, 2, 3, ... or exit. default [${def_ssr_protocol}]): " set_ssr_protocol
         case "${set_ssr_protocol}" in
             1|[Oo][Rr][Ii][Gg][Ii][Nn])
