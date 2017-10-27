@@ -15,7 +15,7 @@ export SS_LIBEV_APT_INIT="https://raw.githubusercontent.com/onekeyshell/kcptun_f
 # SSR
 #export SSR_VER=3.2.1
 export SSR_VER=$(wget --no-check-certificate -qO- https://raw.githubusercontent.com/shadowsocksrr/shadowsocksr/akkariiin/master/shadowsocks/version.py | grep return | cut -d\' -f2 | awk '{print $1}')
-export SSR_LINK="https://github.com/shadowsocksrr/shadowsocksr/archive/manyuser.zip"
+export SSR_LINK="https://github.com/shadowsocksrr/shadowsocksr/archive/akkariiin/master.zip"
 export SSR_YUM_INIT="https://raw.githubusercontent.com/onekeyshell/kcptun_for_ss_ssr/master/ssr.init"
 export SSR_APT_INIT="https://raw.githubusercontent.com/onekeyshell/kcptun_for_ss_ssr/master/ssr_apt.init"
 # KCPTUN
