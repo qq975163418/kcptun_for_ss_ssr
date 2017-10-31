@@ -14,7 +14,7 @@ fi
 shell_update(){
     fun_clangcn "clear"
     echo "+ Check updates for shell..."
-    remote_shell_version=`wget --no-check-certificate -qO- ${shell_download_link} | sed -n '/'^version'/p' | cut -d\" -f4`
+    remote_shell_version=`wget --no-check-certificate -qO- ${shell_download_link} | sed -n '/'^version'/p' | cut -d\" -f2`
     if [ ! -z ${remote_shell_version} ]; then
         if [[ "${version}" != "${remote_shell_version}" ]];then
             echo -e "${COLOR_GREEN}Found a new version,update now!!!${COLOR_END}"
