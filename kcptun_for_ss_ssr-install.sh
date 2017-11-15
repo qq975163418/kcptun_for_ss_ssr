@@ -1108,6 +1108,8 @@ pre_install_kcptun_for_ss_ssr(){
         echo "  7: auth_chain_b"
         echo "  8: auth_chain_c"
         echo "  9: auth_chain_d"
+        echo "  10: auth_chain_e"
+        echo "  11: auth_chain_f"
         read -p "Enter your choice (1, 2, 3, ... or exit. default [${def_ssr_protocol}]): " set_ssr_protocol
         case "${set_ssr_protocol}" in
             1|[Oo][Rr][Ii][Gg][Ii][Nn])
@@ -1127,6 +1129,21 @@ pre_install_kcptun_for_ss_ssr(){
                 ;;
             6|[Aa][Uu][Tt][Hh]_[Cc][Hh][Aa][Ii][Nn]_[Aa])
                 set_ssr_protocol="auth_chain_a"
+                ;;
+            7|[Aa][Uu][Tt][Hh]_[Cc][Hh][Aa][Ii][Nn]_[Aa])
+                set_ssr_protocol="auth_chain_b"
+                ;;
+            8|[Aa][Uu][Tt][Hh]_[Cc][Hh][Aa][Ii][Nn]_[Aa])
+                set_ssr_protocol="auth_chain_c"
+                ;;
+            9|[Aa][Uu][Tt][Hh]_[Cc][Hh][Aa][Ii][Nn]_[Aa])
+                set_ssr_protocol="auth_chain_d"
+                ;;
+            10|[Aa][Uu][Tt][Hh]_[Cc][Hh][Aa][Ii][Nn]_[Aa])
+                set_ssr_protocol="auth_chain_e"
+                ;;
+            11|[Aa][Uu][Tt][Hh]_[Cc][Hh][Aa][Ii][Nn]_[Aa])
+                set_ssr_protocol="auth_chain_f"
                 ;;
             [eE][xX][iI][tT])
                 exit 1
